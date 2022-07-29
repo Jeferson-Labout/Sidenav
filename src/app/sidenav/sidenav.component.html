@@ -4,7 +4,7 @@
     <div class="logo-container">
         <button class="logo" (click)="toggleCollapse()">A</button>
         <div class="logo-text" @rotate @fadeInOut *ngIf="collapsed">Angular</div>
-        <div class="btn-close" *ngIf="collapsed" (click)="closeSidenav()">>
+        <div class="btn-close" *ngIf="collapsed" (click)="closeSidenav()">
             <i class="fal fa-times close-icon"></i>
         </div>
     </div>
