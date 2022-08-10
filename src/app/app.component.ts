@@ -27,7 +27,6 @@ export class AppComponent {
       // ****************************************
       .pipe(filter((event) => event instanceof NavigationEnd))
       .subscribe((event: NavigationEnd | any) => {
-        console.log('URL ativa: ', event.url);
 
         switch (event.url) {
           case '/dashboard':

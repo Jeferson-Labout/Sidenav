@@ -11,7 +11,7 @@ export class BodyComponent {
 
 
 
-  getBodyClass() {
+  getBodyClass(): string {
     let styleClass = '';
     if (this.collapsed && this.screenWidth > 768) {
 
@@ -21,6 +21,6 @@ export class BodyComponent {
       styleClass = 'body-md-screen'
     }
 
-    return '';
+    return styleClass;
   }
 }
