@@ -13,7 +13,8 @@ import { SettingsComponent } from './settings/settings.component';
 import { FooterComponent } from './footer/footer.component';
 import { MatToolbarModule } from '@angular/material/toolbar';
 import { MatIconModule } from '@angular/material/icon';
-import { SublevelMenuComponent } from './sidenav/sublevel-menu.component'
+import { SublevelMenuComponent } from './sidenav/sublevel-menu.component';
+import { HeaderComponent } from './header/header.component'
 
 
 @NgModule({
@@ -27,7 +28,8 @@ import { SublevelMenuComponent } from './sidenav/sublevel-menu.component'
     MediaComponent,
     SettingsComponent,
     FooterComponent,
-    SublevelMenuComponent
+    SublevelMenuComponent,
+    HeaderComponent
   ],
   imports: [
     BrowserModule,
