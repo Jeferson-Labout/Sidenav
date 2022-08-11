@@ -11,9 +11,16 @@ import { StatisticsComponent } from './statistics/statistics.component';
 const routes: Routes = [
   { path: '', redirectTo: 'dashboard', pathMatch: 'full' },
   { path: 'dashboard', component: DashboardComponent },
-  { path: 'produtos', component: ProductsComponent },
+  {
+    path: 'produtos',
+    loadChildren: () => import('./products/products.module').then(m => m.ProductsModule)
+
+  },
   { path: 'estatisticas', component: StatisticsComponent },
-  { path: 'cupons', component: CoupensComponent },
+  {
+    path: 'cupons',
+    loadChildren: () => import('./coupens/coupens.module').then(m => m.CoupensModule)
+  },
   { path: 'paginas', component: PagesComponent },
   { path: 'midia', component: MediaComponent },
   { path: 'configuracoes', component: SettingsComponent }
