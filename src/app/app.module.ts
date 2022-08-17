@@ -15,6 +15,8 @@ import { MatToolbarModule } from '@angular/material/toolbar';
 import { MatIconModule } from '@angular/material/icon';
 import { SublevelMenuComponent } from './sidenav/sublevel-menu.component';
 import { HeaderComponent } from './header/header.component'
+import { OverlayModule } from '@angular/cdk/overlay'
+import { CdkMenuModule } from '@angular/cdk/menu'
 
 
 @NgModule({
@@ -36,7 +38,9 @@ import { HeaderComponent } from './header/header.component'
     AppRoutingModule,
     BrowserAnimationsModule,
     MatToolbarModule,
-    MatIconModule
+    MatIconModule,
+    OverlayModule,
+    CdkMenuModule
   ],
   providers: [],
   bootstrap: [AppComponent]
